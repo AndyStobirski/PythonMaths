@@ -68,7 +68,7 @@ def generate_markdown_table(pMDPath, pPrimeList):
 
         val = f"`{val}`"
         
-        markdown_lines.append(f"| **{prime}** | {period} | {val} |")
+        markdown_lines.append(f"| **{prime}** | {period} | <code>{val}</code> |")
 
     with open(str(pMDPath), "w", encoding="utf-8") as f:
         f.writelines(f"{line}\n" for line in markdown_lines)
