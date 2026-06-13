@@ -64,7 +64,7 @@ def generate_markdown_table(readme_path, jsonlist):
     for entry in jsonlist:
         prime = entry.get("Prime", entry.get("Prime:")) # Catches both key formats safely
         val = entry.get("Value", "")
-        period = entry.get("periodicity", 0)
+        period = entry.get("Periodicity", 0)
 
         # Truncate sequences longer than 30 characters to keep the table scannable
         truncated_val = f"`{val[:30]}...`" if len(val) > 33 else f"`{val}`"
