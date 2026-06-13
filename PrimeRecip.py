@@ -51,30 +51,26 @@ def GetPrimeRecip(pPrime):
 
     return {"Prime:": pPrime, "Periodicity": period, "Value": f"0.{output}"}
 
-def generate_markdown_table(readme_path, jsonlist):
+def generate_markdown_table(pMDPath, pPrimeList):
 
 
     # 3. Construct the Markdown table header template
     markdown_lines = [
+        "# PrimeRecip"
         "| Prime | Period Length | Decimal Sequence Preview |",
         "| :--- | :---: | :--- |"
     ]
 
-    # 4. Loop over calculations and populate rows
-    for entry in jsonlist:
+    for entry in pPrimeList:
         prime = entry.get("Prime", entry.get("Prime:")) # Catches both key formats safely
         val = entry.get("Value", "")
         period = entry.get("Periodicity", 0)
 
-        # Truncate sequences longer than 30 characters to keep the table scannable
-        truncated_val = f"`{val[:30]}...`" if len(val) > 33 else f"`{val}`"
+        val = f"`{val}`"
         
-        markdown_lines.append(f"| **{prime}** | {period} | {truncated_val} |")
+        markdown_lines.append(f"| **{prime}** | {period} | {val} |")
 
-    #table_content = "\n".join(markdown_lines)
-
-    with open(str(readme_path), "w", encoding="utf-8") as f:
-        f.write("# PythonMaths\n\n")
+    with open(str(pMDPath), "w", encoding="utf-8") as f:
         f.writelines(f"{line}\n" for line in markdown_lines)
 
 
