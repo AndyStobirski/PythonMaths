@@ -75,9 +75,7 @@ def generate_markdown_table(readme_path, jsonlist):
 
     with open(str(readme_path), "w", encoding="utf-8") as f:
         f.write("# PythonMaths\n\n")
-        for l in markdown_lines:
-            f.write(l)
-
+        f.writelines(f"{line}\n" for line in markdown_lines)
 
 
 # 500 primes
