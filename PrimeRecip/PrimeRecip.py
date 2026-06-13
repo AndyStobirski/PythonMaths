@@ -66,9 +66,9 @@ def generate_markdown_table(pMDPath, pPrimeList):
         val = entry.get("Value", "")
         period = entry.get("Periodicity", 0)
 
-        val = f"`{val}`"
+        truncatedVal = f"`{val[:30]}...`" if len(val) > 30 else f"`{val}`"
         
-        markdown_lines.append(f"| **{prime}** | {period} | <code>{val}</code> |")
+        markdown_lines.append(f"| **{prime}** | {period} | <code>{truncatedVal}</code> |")
 
     with open(str(pMDPath), "w", encoding="utf-8") as f:
         f.writelines(f"{line}\n" for line in markdown_lines)
