@@ -6,7 +6,9 @@ $\frac{\pi}{4}\approx 4arctan(\frac{1}{5}) - arctan(\frac{1}{239})$
 
 This formula resolves to <code>3.141592653</code>
 
-Using my trust TI84 plus $arctan(\frac{1}{5}) \approx 0.1973955598$
+Using my trusty TI84 plus 
+
+$arctan(\frac{1}{5}) \approx 0.1973955598$
 
 $\pi \approx 3.14159265358979$
 
@@ -18,8 +20,22 @@ The first three items of it are
 
 $arctan(x) \approx x - \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7}$
 
-For $\frac{1}{5} which evaluates to
+For $\frac{1}{5}$ which evaluates to
 
 $arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{\frac{1}{5}^{3}}{3} + \frac{\frac{1}{5}^{5}}{5} - \frac{\frac{1}{5}^{7}}{7}$
 
 which evaluates to
+
+$arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{\frac{1}{125}}{3} + \frac{\frac{1}{3125}}{5} - \frac{\frac{1}{78125}}{7}$
+
+which evaluates to
+
+$arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{1}{375} + \frac{1}{15625} - \frac{1}{546875}$
+
+Which evaluates to
+
+$arctan(\frac{1}{5}) \approx \frac{323852}{1640625}$
+
+Which evaluates to
+
+0.197396
