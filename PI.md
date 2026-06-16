@@ -24,33 +24,10 @@ For $\frac{1}{5}$ which evaluates to
 
 $arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{\frac{1}{5}^{3}}{3} + \frac{\frac{1}{5}^{5}}{5} - \frac{\frac{1}{5}^{7}}{7}$
 
-which evaluates to
+$\approx \frac{1}{5} - \frac{\frac{1}{125}}{3} + \frac{\frac{1}{3125}}{5} - \frac{\frac{1}{78125}}{7}$
 
-$arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{\frac{1}{125}}{3} + \frac{\frac{1}{3125}}{5} - \frac{\frac{1}{78125}}{7}$
+$\approx \frac{1}{5} - \frac{1}{375} + \frac{1}{15625} - \frac{1}{546875}$
 
-which evaluates to
+$\approx \frac{323852}{1640625}$
 
-$arctan(\frac{1}{5}) \approx \frac{1}{5} - \frac{1}{375} + \frac{1}{15625} - \frac{1}{546875}$
-
-Which evaluates to
-
-$arctan(\frac{1}{5}) \approx \frac{323852}{1640625}$
-
-Which evaluates to
-
-$arctan(\frac{1}{5}) \approx 0.197396$
-
-$\documentclass{article}
-\usepackage{amsmath} % Required for the align environment
-
-\begin{document}
-
-\begin{align*}
-\arctan\left(\frac{1}{5}\right) &\approx \frac{1}{5} - \frac{\frac{1}{5^3}}{3} + \frac{\frac{1}{5^5}}{5} - \frac{\frac{1}{5^7}}{7} \\[1ex]
-&\approx \frac{1}{5} - \frac{\frac{1}{125}}{3} + \frac{\frac{1}{3125}}{5} - \frac{\frac{1}{78125}}{7} \\[1ex]
-&\approx \frac{1}{5} - \frac{1}{375} + \frac{1}{15625} - \frac{1}{546875} \\[1ex]
-&\approx \frac{323852}{1640625} \\[1ex]
-&\approx 0.197396
-\end{align*}
-
-\end{document}$
+$\approx 0.197396$$
