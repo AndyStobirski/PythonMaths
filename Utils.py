@@ -43,3 +43,17 @@ def GetPrimeRecip(pPrime, pPeriodLength):
             output += str(result)
 
     return {"Prime:": pPrime, "Periodicity": period, "Value": f"0.{output}"}
+
+
+
+print(GetPrimeRecip(2555,100))
+print(GetPrimeRecip(375,100))
+print(GetPrimeRecip(15625,100))
+print(GetPrimeRecip(546875,100))
+
+
+'''
+The Rule for StoppingA fraction will always turn into a terminating decimal if its denominator's prime factors are only 2s, 5s, or both.
+
+
+'''
